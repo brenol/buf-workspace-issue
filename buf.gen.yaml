@@ -1,6 +1,7 @@
 version: v1
 plugins:
   - name: validate
-    out: proto/
+    out: gen/proto/go
     opt:
+      - paths=source_relative
       - lang=go
