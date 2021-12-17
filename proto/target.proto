@@ -1,0 +1,8 @@
+syntax = "proto3";
+package test;
+
+import "validate/validate.proto";
+
+message Request {
+    uint64 id    = 1 [(validate.rules).uint64.gt    = 999];
+}
